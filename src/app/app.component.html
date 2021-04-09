@@ -1,0 +1,20 @@
+<!-- 
+User : {{user}}
+
+<ul>
+  <li *ngFor="let product of products">{{product.ad}}</li>
+</ul> -->
+
+<div class="container">
+  <div class="row">
+    <app-navi></app-navi>
+  </div>
+ <div class="row">
+   <div class="col-md-3">
+    <app-category></app-category>
+   </div>
+   <div class="col-md-9">
+    <router-outlet></router-outlet> <!--sürekli değişecek componentler için, routing module ü ayarla-->
+   </div>
+ </div>
+</div>
